@@ -324,14 +324,6 @@ justify-content: space-around;
 width: 300px;
 height: 300px;
 text-align: center;
-border-bottom: border-width: 3px;
- border-style: solid;
- border-image:
-   linear-gradient(
-     to bottom,
-     #FF5408,
-     rgba(0, 0, 0, 0)
-   ) 1 100%;
 border-width: 3px;
  border-style: solid;
  border-image:

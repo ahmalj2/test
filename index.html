@@ -46,7 +46,7 @@
     <h1>About</h1>
   </div>
 
-<div class="work">
+<div id="work">
 
   <div>
     <img src="image/bild1.svg" style="width:75%" alt="training">
@@ -187,6 +187,19 @@ No Risks & No Obligations</p>
 </script>
 
 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  document.getElementById("work").className = "slideUp";
+  document.getElementById("work").style.visibility = "visible";
+
+
+}
+}
+</script>
 
 
   </body>

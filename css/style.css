@@ -16,6 +16,11 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
+.couches > div > i{
+  margin-left: auto;
+  margin-right: auto;
+
+}
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -299,9 +304,10 @@ justify-content: space-around;
 
 
 
-.couches > div{
 
-text-align: center;
+.couches > div > i{
+  margin-left: auto;
+  margin-right: auto;
 
 }
 

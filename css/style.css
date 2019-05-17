@@ -312,6 +312,11 @@ justify-content: space-around;
 }
 
 
+
+.couches > div {
+  text-align: center;
+}
+
 .priser{
   display: flex;
   width: 100%;

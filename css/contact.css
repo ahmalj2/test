@@ -1,0 +1,333 @@
+*{
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+text-shadow: rgba(0,0,0,.01) 0 0 1px;
+font-family: 'Nanum Gothic', sans-serif;
+
+
+}
+#span1{
+  color: #456B04;
+}
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+
+body {
+  font-family: 'QuickSand',sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	background: #FFFFFF;
+	color: #a5a5a5;
+}
+
+
+.wrapper {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background: #000000;
+  color: #ebebd3;
+  position: relative;
+  padding: 1em 0;
+  border-bottom: solid 2px #FF9908;
+}
+
+header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.logo {
+  float: left;
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.main-nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background: #464655;
+  height: 0;
+  overflow: hidden;
+}
+
+.main-nav-open {
+  height: auto;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav li {
+  border-bottom: 1px solid #575766;
+}
+
+.main-nav li:last-child {
+  border-bottom: none;
+}
+
+
+.main-nav a {
+  color: white;
+  display: block;
+  padding: 1em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover,
+.main-nav a:focus{
+  background: #e4b363;
+  color: #FF9908;
+}
+
+.nav-icon {
+  display: inline-block;
+  font-size: 1.3em;
+  margin-right: .5em;
+  text-align: center;
+  width: 1.1em;
+  color: rgba(255,255,255,0.45);
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.2em;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+  content: "";
+  display: block;
+  background: #ebebd3;
+  height: 3px;
+  width: 1.75em;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg) ;
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: rotate(90deg) translateY(3px);
+}
+
+@media only screen and (min-width: 700px){
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    border: none;
+  }
+
+  .main-nav a {
+    padding: 0;
+    margin-left: 2em;
+  }
+
+  .main-nav a:hover,.main-nav a:focus {
+    background: transparent;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+}
+
+/*body*/
+
+.main{
+  background-image: url("../image/contact.jpg");
+  width: 100%;
+  min-height: 300px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+.home-title{
+    font-size: 60px;
+    font-weight: 500;
+    color: #ffffff;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.main-contact{
+  width: 100%;
+  height: auto;
+  background-color: red;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #C0C0C0;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container-contact {
+    border-radius: 5px;
+    background: linear-gradient(110deg, black 60%, #ff9908 60%);
+    padding: 20px;
+    color: white;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+#if{
+  width: 100%;
+  height:500px;
+  color: black;
+}
+
+map{
+  width: 50%;
+
+  overflow: hidden;
+}
+.map-cont{
+  height:auto;
+  display: flex;
+}
+
+#right{
+  width: 50%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  color: black;
+
+
+}
+.subs{
+  width: 100%;
+  height: 300px;
+  background-color: #FF9908;
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+.subscribe-b{
+  font-weight: 700;
+    color: #ffffff;
+margin: auto;
+    line-height: 1.2;
+}
+
+#span{
+  color: black;
+}
+
+/**/ 
+
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+    .map-cont{
+    display: block;
+    }
+
+
+}

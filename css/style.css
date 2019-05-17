@@ -32,12 +32,14 @@ body {
 }
 
 header {
+
   background: #000000;
   color: #ebebd3;
   position: fixed;
   padding: 1em 0;
   width: 100%;
   border-bottom: solid 2px #FF9908;
+	visibility: hidden;
 }
 
 header::after {
@@ -66,6 +68,7 @@ header::after {
   background: #464655;
   height: 0;
   overflow: hidden;
+
 }
 
 .main-nav-open {
@@ -321,6 +324,14 @@ justify-content: space-around;
 width: 300px;
 height: 300px;
 text-align: center;
+border-bottom: border-width: 3px;
+ border-style: solid;
+ border-image:
+   linear-gradient(
+     to bottom,
+     #FF5408,
+     rgba(0, 0, 0, 0)
+   ) 1 100%;
 border-width: 3px;
  border-style: solid;
  border-image:
@@ -453,7 +464,7 @@ footer {
 
 
 #work{
-	visibility: hidden;
+	visibility: visible;
   display: flex;
   width: 100%;
   height: auto;

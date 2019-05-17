@@ -1,3 +1,8 @@
+document.getElementById("header").style.visibility = "visible";
+document.getElementById("button").style.visibility = "visible";
+document.getElementById("map").style.display = "block";
+
+
 $(window).ready(function(){
   $('.menu-toggle').click(function(){
     //console.log(2);

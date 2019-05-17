@@ -15,7 +15,7 @@ $("#home").click(function() {
 //moving to the targeted element smoothely in 2 s
 $("#about").click(function() {
       $('html,body').animate({
-        scrollTop:$(".work").offset().top}, 2000);
+        scrollTop:$("#work").offset().top}, 2000);
       });
       //moving to the targeted element smoothely in 2 s
 $("#oll").click(function() {

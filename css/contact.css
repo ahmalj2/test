@@ -31,7 +31,11 @@ body {
   margin: 0 auto;
 }
 
+#button{
+  visibility: hidden;
+}
 header {
+  visibility: hidden;
   background: #000000;
   color: #ebebd3;
   position: relative;
@@ -314,7 +318,11 @@ margin: auto;
   color: black;
 }
 
-/**/ 
+#map{
+  display: none;
+}
+
+/**/
 
 
 @media screen and (max-width: 600px) {

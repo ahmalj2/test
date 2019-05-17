@@ -13,7 +13,7 @@
   </head>
   <body>
 <div id="wrapper">
-  <header>
+  <header id="header">
       <div class="wrapper">
         <h1 class="logo"> CROSSFIT <span id="span1"> X </span></h1>
         <nav class="main-nav">
@@ -189,6 +189,11 @@ No Risks & No Obligations</p>
 
 
 <script>
+document.getElementById("work").style.visibility = "hidden";
+
+document.getElementById("header").style.visibility = "visible";
+
+
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
